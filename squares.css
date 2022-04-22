@@ -1,0 +1,44 @@
+
+*{
+    padding: 0;
+    margin: 10px;
+}
+/* atempting to make background to change with different screensizes */
+body{
+    background-color: pink;
+}
+html{
+    font-size: large;
+    text-align: center;
+
+}
+/* I need to figure out why the background color is not changing for the container, figured it out because i was misspelling container and containter*/
+.container {
+    background-color: chartreuse;
+    box-sizing: border-box;
+    position: absolute;
+    
+}  
+/* Brekapoint for moblie devices*/
+@media only screen and (max-width:480px){
+    body{
+        background-color: aquamarine;
+    }
+}
+/* breakpoint for tablets */
+@media only screen and (min-width:481px) and (max-width:768px) {
+    body{
+        background-color: blueviolet;
+    }
+}
+/* breakpoint for laptop screens*/
+@media only screen and (min-width: 769px) and (max-width:1024px) {
+    body{
+        background-color: hotpink;
+    }
+}
+.square { 
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
